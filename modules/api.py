@@ -74,7 +74,8 @@ f95_ddl_endpoint        = f95_host + "/sam/dddl.php"
 f95_attachments_hosts = (
     f"https://attachments.{f95_domain}/",
     "https://attachments.f95zone.com/",
-    f95_attachments_rocks := "https://attachments.f95zone.rocks/",
+    #f95_attachments_rocks := "https://attachments.f95zone.rocks/", as .rocks is not working as of Jul 2026 (fails DNS resolution)
+    f95_attachments_rocks := "https://attachments.f95zone.to/",
 )
 f95_no_ratelimit_urls = (
     f95_check_login_fast,
